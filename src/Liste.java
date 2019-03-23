@@ -85,5 +85,23 @@ public class Liste {
 
     }
 
+    public void removeFromTail() {
+
+        if (head == null) {
+            return;
+
+        } else if (head == tail) {
+            head = null;
+            tail = tail;
+
+        } else {
+
+            tail = tail.previous;
+            tail.next = null;
+
+        }
+
+    }
+
 
 }
